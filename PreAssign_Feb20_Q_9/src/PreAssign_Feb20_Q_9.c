@@ -23,7 +23,6 @@ void getData();
 int getOrderID();
 void createItem();
 void addItem();
-int isEmpty();
 void findItem();
 void displayAll();
 void editItem();
@@ -139,15 +138,6 @@ void findItem() {
 	}
 	if(check==0)
 		printf("\nNo Such Item Present");
-}
-
-int isEmpty() {
-	rewind(fp);
-	fread(&newItem, sizeof(newItem), 1, fp);
-	if(newItem.id==0)
-		return 1;
-	else
-		return 0;
 }
 
 void displayAll() {
