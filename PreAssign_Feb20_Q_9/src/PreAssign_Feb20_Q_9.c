@@ -86,7 +86,7 @@ void deleteItem(){
 	fclose(fp);
 	fclose(ft);
 	remove("BinaryFile.dat");
-	rename("BinaryFile.dat","BinaryFile.dat");
+	rename("TempBinaryFile.dat","BinaryFile.dat");
 	if(check==1)
 		printf("\nItem is deleted Successful");
 	else
